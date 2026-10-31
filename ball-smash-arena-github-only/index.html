@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101326"><title>Ball Smash Arena</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header><a class="brand" href="#">✦ BALL SMASH <b>ARENA</b></a><span>ARCADE MODE · LOCAL STATS</span></header>
+<main>
+<section class="intro"><div class="eyebrow">60-SECOND ARCADE CHALLENGE</div><h1>Smash fast.<br><span>Climb higher.</span></h1><p>Tap the glowing balls, build combos and beat your personal best. No installation required.</p>
+<div class="stats"><div><b id="games">0</b><small>GAMES ON THIS DEVICE</small></div><div><b id="best">0</b><small>PERSONAL BEST</small></div><div><b id="total">0</b><small>TOTAL POINTS</small></div></div>
+<p class="note">Stats are saved only in this browser. They are not shared globally.</p></section>
+<section class="game">
+<div class="game-head"><div><small>YOUR ARENA</small><h2 id="status">Ready to play?</h2></div><div class="timer"><small>TIME</small><b id="timer">60</b></div></div>
+<div class="scoreline"><div><small>SCORE</small><b id="score">0</b></div><div><small>COMBO</small><b id="combo">×1</b></div></div>
+<div class="arena" id="arena"><canvas id="canvas"></canvas><div class="overlay" id="overlay"><div class="orb">✦</div><h3>Ready, player?</h3><p>Smash glowing balls. Avoid dark bombs.</p><button id="start">START GAME →</button></div></div>
+<div class="legend"><span>🟣 Ball: +10 / +50</span><span>⚫ Bomb: −25</span><span>⚡ Combo multiplier</span></div>
+</section>
+<aside class="panel"><small>PLAYER PROFILE</small><h2>Your records</h2><label for="name">DISPLAY NAME</label><input id="name" maxlength="18" placeholder="Arcade player"><button class="secondary" id="saveName">Save name</button><h3>Recent games</h3><ol id="history"><li>No games yet.</li></ol><button class="secondary clear" id="clear">Clear local records</button></aside>
+</main>
+<footer><span>Ball Smash Arena</span><span>Hosted with GitHub Pages · No account needed</span></footer>
+<script src="./js/game.js"></script>
+</body></html>
